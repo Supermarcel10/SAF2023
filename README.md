@@ -1,6 +1,6 @@
 # About This Project
 
-This project is part of the International STEAM Azerbaijan Festival (SAF) 2023, under the Hackathon category. Centered around the theme "Gamification of Education", our project aims to revolutionize kids learning experiences.
+This project is part of the International STEAM Azerbaijan Festival (SAF) 2023, under the Hackathon category. Centered around the theme "Gamification of Education", our project aims to revolutionize kids' learning experiences.
 
 ## Our Team
 
