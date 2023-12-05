@@ -1,0 +1,64 @@
+:root {
+  --main-color: #D1D2F9;
+  --highlight-color: #246EB9;
+  --font-color: #011627;
+  --green: #ACECA1;
+  --red: #FF847C;
+}
+
+.App {
+  font-family: 'Playpen Sans', cursive;
+  text-align: center;
+  background-color: var(--main-color);
+}
+
+/*The main sentence*/
+.App #sentence {
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--font-color);
+}
+
+.App #sentence:hover {
+  cursor: pointer;
+}
+
+/*Highlighted words*/
+.App #sentence .important {
+  color: var(--highlight-color);
+}
+
+/*Blanked out spaces for words to be put in*/
+.App #sentence .blank {
+  display: inline;
+   width: 50px;
+   height: 1em;
+   background-color: #fff;
+   border: 1px solid #000;
+   margin: 0 5px;
+   color: transparent;
+ }
+
+.App #sentence:hover {
+  cursor: pointer;
+}
+
+.App .nav-button {
+  font-size: 2em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  background-color: var(--green);
+  border-radius: 10px;
+  border: 2px solid var(--font-color);
+  padding: 10px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.App .nav-button:hover {
+  cursor: pointer;
+}
