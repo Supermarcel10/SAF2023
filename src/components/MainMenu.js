@@ -9,13 +9,12 @@ import beeImage from '../img/bee.png';
 import frogImage from '../img/frog.png';
 import logo from '../img/logo.png';
 
-//import App from '../App.js';
-const LazyApp = React.lazy(() => import('../App.js'));
+// const LazyApp = React.lazy(() => import('../App.js'));
 
 function ImageClickLoader() {
   const handleMenuChoiceClick = () => {
   // Dynamically load App component
-  LazyApp.preload();
+  // LazyApp.preload();
 
   // Your logic for handling the click event goes here
   console.log('MenuChoice clicked!');}}

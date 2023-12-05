@@ -32,8 +32,6 @@ import dogImage from '../img/dog.png'
 //
 // Can you generate an image of smoke.
 //
-// Can you generate an image of a teapot.
-//
 // Can you generate an image of a book.
 //
 // Can you generate an image of a path.
