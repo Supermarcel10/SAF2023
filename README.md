@@ -8,8 +8,8 @@ We are one of two teams proudly representing the United Kingdom. 🇬🇧
 
 Our team:
 - **Dan** - Team Mentor
-- [**Kimberly**](https://github.com/kimbebebe) - Business & Presentation
-- [**Ellen Taylor**](https://github.com/ellentaylor827) - Frontend Developer, Graphics Designer & Storyteller
+- [**Kimberly Deemore**](https://github.com/kimbebebe) - Business, Graphics Design & Presentation
+- [**Ellen Taylor**](https://github.com/ellentaylor827) - Frontend Developer & Storyteller
 - [**Marcel Barlik**](https://github.com/Supermarcel10) - Full Stack Developer
 
 ## Our Mission
@@ -30,3 +30,4 @@ Discover more about our strategic vision and roadmap in our detailed [Business P
 # Copyright
 
 Our project uses the [Playpen Sans](https://fonts.google.com/specimen/Playpen+Sans?classification=Handwriting) font, licensed under the [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web).
+The images used in our project are royalty-free and sourced from multiple sources.
