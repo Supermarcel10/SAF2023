@@ -8,9 +8,9 @@ interface ChoiceProps {
 	image_alt: string;
 }
 
-function Choice(props: ChoiceProps) {
+function AnswerChoice(props: ChoiceProps) {
 	return (
-		<div className={"selector"}>
+		<div className={"selection"}>
 			<img className={"image"} src={props.image_path} alt={props.image_alt} />
 			<p className={"english"}>{props.english}</p>
 			<p className={"translation"}>{props.translated}</p>
@@ -18,4 +18,4 @@ function Choice(props: ChoiceProps) {
 	);
 }
 
-export default Choice;
+export default AnswerChoice;

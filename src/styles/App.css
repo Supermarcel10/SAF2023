@@ -9,6 +9,7 @@
 .App .sentenceContainer {
   width: 70%;
   margin: 0 auto;
+  padding: 4% 0 4% 0;
 }
 
 /*The main sentence*/
@@ -16,7 +17,7 @@
   font-size: 4em;
   font-weight: bold;
   color: var(--font-color);
-  padding: 0;
+  margin: 0;
 }
 
 .App #sentence:hover {
@@ -31,50 +32,51 @@
 /*Blanked out spaces for words to be put in*/
 .App #sentence .blank {
   display: inline;
-   width: 50px;
-   height: 1em;
-   background-color: #fff;
-   border: 1px solid #000;
-   margin: 0 5px;
-   color: transparent;
- }
+  width: 50px;
+  height: 1em;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin: 0 5px;
+  color: transparent;
+  user-select: none;
+}
 
 .App #sentence:hover {
   cursor: pointer;
 }
 
-.App .nav-button {
-  font-size: 2em;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--font-color);
-  background-color: var(--green);
-  border-radius: 10px;
-  border: 2px solid var(--font-color);
-  padding: 10px;
-  margin: .25em;
-  aspect-ratio: 1 / 1;
-  width: 5%;
-  min-width: 50px;
-}
-
-.App .nav-button:hover {
-  cursor: pointer;
-}
-
 .App .selector {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 70%;
+  gap: 1%;
   margin: 0 auto;
 }
 
 .App .navigation {
   display: flex;
   justify-content: space-between;
-  padding: 0 15%;
+  padding: 4% 15% 0 15%;
+}
+
+.App .nav-button {
+  font-size: 3em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  background-color: var(--green);
+  border-radius: 30%;
+  border: .2rem solid var(--font-color);
+  padding: 0    ;
+  margin: .25rem;
+  aspect-ratio: 1 / 1;
+  width: 8%;
+  min-width: 10vh;
+}
+
+.App .nav-button:hover {
+  cursor: pointer;
 }

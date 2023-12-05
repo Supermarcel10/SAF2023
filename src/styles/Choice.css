@@ -1,25 +1,25 @@
 @import './_variables.css';
 
-.Choice {
-    display: flex;
-    flex-direction: column;
+.selection {
     align-items: center;
     justify-content: center;
     width: 100%;
+    aspect-ratio: 1 / 1;
     margin: 0.5rem 0;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
+    padding: 0;
+    border: 5px solid #000;
     border-radius: 0.5rem;
     background-color: var(--choices);
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 .image {
-    width: 10%;
+    width: 70%;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: contain;
     margin-bottom: 0;
+    user-select: none;
 }
 
 .english {
@@ -27,6 +27,7 @@
     font-weight: bold;
     color: var(--font-color);
     margin: 0 auto;
+    user-select: none;
 }
 
 .translation {
@@ -34,4 +35,5 @@
     font-weight: bold;
     color: var(--small-font-color);
     margin-top: 0;
+    user-select: none;
 }
