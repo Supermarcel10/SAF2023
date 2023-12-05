@@ -1,9 +1,16 @@
 import * as React from 'react';
 import '../styles/AnswerBlankBox.css';
 
-const AnswerBlankBox: React.FC = () => {
-    const [text, setText] = React.useState("");
+interface AnswerBlankBoxProps {
+    text: string | null;
+    setText: (text: string) => void;
+    expectedText: string | null;
+    setCorrectAnswers: (correct: boolean) => void;
+}
+
+const AnswerBlankBox: React.FC<AnswerBlankBoxProps> = (props) => {
     const [isFilled, setIsFilled] = React.useState(false);
+    const [isCorrect, setIsCorrect] = React.useState(false);
 
     const handleDragOver = (event: React.DragEvent<HTMLSpanElement>) => {
         event.preventDefault();
@@ -12,14 +19,21 @@ const AnswerBlankBox: React.FC = () => {
     const handleDrop = (event: React.DragEvent<HTMLSpanElement>) => {
         event.preventDefault();
         const english = event.dataTransfer.getData('text/plain');
-        setText(english);
+        props.setText(english);
         setIsFilled(true);
+        if (english === props.expectedText) {
+            setIsCorrect(true);
+            props.setCorrectAnswers(true);
+        } else {
+            setIsCorrect(false);
+            props.setCorrectAnswers(false);
+        }
     };
 
     return (
-        <span className={isFilled ? "filled blank" : "blank"} onDragOver={handleDragOver} onDrop={handleDrop}>
-            {text || "empty"}
-        </span>
+        <span className={isFilled ? (isCorrect ? "filled blank correct" : "filled blank incorrect") : "blank"} onDragOver={handleDragOver} onDrop={handleDrop}>
+      {props.text || "empty"}
+    </span>
     );
 }
 

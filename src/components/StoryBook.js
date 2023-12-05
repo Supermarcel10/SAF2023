@@ -3,26 +3,140 @@ import StoryPage from './StoryPage';
 
 import catImage from '../img/cat.png'
 import dogImage from '../img/dog.png'
+// import birdImage from '../img/bird.png'
+// import sunImage from '../img/sun.png'
+// import appleImage from '../img/apple.png'
+// import skyImage from '../img/sky.png'
+// import groundImage from '../img/ground.png'
+// import waterImage from '../img/water.png'
+// import flowersImage from '../img/flowers.png'
+// import treesImage from '../img/trees.png'
+// import bushesImage from '../img/bushes.png'
+// import parkImage from '../img/park.png'
+// import bananaImage from '../img/banana.png'
+// import umbrellaImage from '../img/umbrella.png'
+// import houseImage from '../img/house.png'
+// import penguinImage from '../img/penguin.png'
+// import clockImage from '../img/clock.png'
+// import smokeImage from '../img/smoke.png'
+// import teapotImage from '../img/teapot.png'
+// import bookImage from '../img/book.png'
+// import pathImage from '../img/path.png'
+// import sunglassesImage from '../img/sunglasses.png'
+// import cakeImage from '../img/cake.png'
+
+
+// Can you generate an image of a park.
+// Can you generate an image of a house.
+// Can you generate an image of a clock.
+//
+// Can you generate an image of smoke.
+//
+// Can you generate an image of a teapot.
+//
+// Can you generate an image of a book.
+//
+// Can you generate an image of a path.
+//
+// Can you generate an image of sunglasses.
+//
+// Can you generate an image of a cake.
 
 const StoryBook = () => {
   const [currentPage, setCurrentPage] = useState(0);
 
   const storyPages = [
     {
-      sentence: "This is a story about a little {cat} and a {dog}.",
-      translation: "Bu kiçik bir pişik və it haqqında hekayədir.",
+      sentence: "Coco is a small, playful {cat}.",
+      translation: "Coco kiçik, oyunçu bir pişikdir.",
       answerChoices: [
-        { english: "cat", translated: "pişik", image_path: catImage, image_alt: "image of a cat" }
+        { english: "cat", translated: "pişik", image_path: catImage, image_alt: "image of a cat" },
       ]
     },
+    // {
+    //   sentence: "She finds a bright, red {bird}.",
+    //   translation: "O parlaq, qırmızı bir quş tapır.",
+    //   answerChoices: [
+    //     { english: "bird", translated: "quş", image_path: birdImage, image_alt: "image of a bird" },
+    //     { english: "dog", translated: "siçan", image_path: dogImage, image_alt: "image of a dog" }
+    //   ]
+    // },
+    // {
+    //   sentence: "The {sun} is warm and bright.",
+    //   translation: "Günəş isti və parlaqdır.",
+    //   answerChoices: [
+    //     { english: "sun", translated: "günəş", image_path: sunImage, image_alt: "image of the sun" },
+    //     { english: "apple", translated: "alma", image_path: appleImage, image_alt: "image of an apple" },
+    //   ]
+    // },
+    // {
+    //   sentence: "The bird flies up into the {sky}.",
+    //   translation: "Quş göyə uçur.",
+    //   answerChoices: [
+    //     { english: "sky", translated: "göy", image_path: skyImage, image_alt: "image of the sky" },
+    //     { english: "ground", translated: "yer", image_path: groundImage, image_alt: "image of the ground" },
+    //     { english: "water", translated: "su", image_path: waterImage, image_alt: "image of the water" }
+    //   ]
+    // },
+    // {
+    //   sentence: "Coco jumps over {flowers}.",
+    //   translation: "Coco gülər üzərindən atlayır.",
+    //   answerChoices: [
+    //     { english: "flowers", translated: "gül", image_path: flowersImage, image_alt: "image of flowers" },
+    //     { english: "trees", translated: "ağaclar", image_path: treesImage, image_alt: "image of trees" }
+    //   ]
+    // },
+    // {
+    //   sentence: "She wanders past {trees} and bushes.",
+    //   translation: "O ağaclar və çalılar üzərindən gezir.",
+    //   answerChoices: [
+    //     { english: "trees", translated: "ağaclar", image_path: treesImage, image_alt: "image of trees" },
+    //     { english: "bushes", translated: "çalılar", image_path: bushesImage, image_alt: "image of bushes" },
+    //     { english: "dog", translated: "siçan", image_path: dogImage, image_alt: "image of a dog" }
+    //   ]
+    // },
+    // {
+    //   sentence: "Coco feels lost in the {park}.",
+    //   translation: "Coco parkda itirilib.",
+    //   answerChoices: [
+    //     { english: "park", translated: "park", image_path: parkImage, image_alt: "image of the park" },
+    //     { english: "banana", translated: "muz", image_path: bananaImage, image_alt: "image of a banana" },
+    //     { english: "umbrella", translated: "şəmsiyyə", image_path: umbrellaImage, image_alt: "image of an umbrella" }
+    //   ]
+    // },
+    // {
+    //   sentence: "She looks for her cozy {house}.",
+    //   translation: "O rahat evini axtarır.",
+    //   answerChoices: [
+    //     { english: "house", translated: "ev", image_path: houseImage, image_alt: "image of a house" },
+    //     { english: "penguin", translated: "penqvin", image_path: penguinImage, image_alt: "image of a penguin" },
+    //     { english: "clock", translated: "saat", image_path: clockImage, image_alt: "image of a clock" }
+    //   ]
+    // },
+    // {
+    //   sentence: "Coco sees the {smoke} in the distance.",
+    //   translation: "Coco uzaqda duman görür.",
+    //   answerChoices: [
+    //     { english: "smoke", translated: "duman", image_path: smokeImage, image_alt: "image of smoke" },
+    //     { english: "teapot", translated: "çaydan", image_path: teapotImage, image_alt: "image of a teapot" },
+    //     { english: "book", translated: "kitab", image_path: bookImage, image_alt: "image of a book" }
+    //   ]
+    // },
+    // {
+    //   sentence: "She walks back on the {path}.",
+    //   translation: "O geri dönür.",
+    //   answerChoices: [
+    //     { english: "path", translated: "yol", image_path: pathImage, image_alt: "image of a path" },
+    //     { english: "sunglasses", translated: "günəş eynəyi", image_path: sunglassesImage, image_alt: "image of sunglasses" },
+    //     { english: "cake", translated: "tort", image_path: cakeImage, image_alt: "image of a cake" },
+    //     { english: "book", translated: "kitab", image_path: bookImage, image_alt: "image of a book" }
+    //   ]
+    // },
     {
-      sentence: "Another page about a {mouse} and a {cheese}.",
-      translation: "Bu bir siçan və pendir haqqında başqa bir səhifədir.",
-      answerChoices: [
-        { english: "dog", translated: "siçan", image_path: dogImage, image_alt: "image of a mouse" },
-      ]
-    },
-    // ... more pages ...
+      sentence: "Coco is happy to be home.",
+      translation: "Coco evdə olmaqdan xoşbəxt olur.",
+      answerChoices: []
+    }
   ];
 
   const goToNextPage = () => {

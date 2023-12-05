@@ -14,6 +14,7 @@
 }
 
 .selector .selection:hover {
+	background-color: var(--choices-highlighted);
 	cursor: pointer;
 }
 

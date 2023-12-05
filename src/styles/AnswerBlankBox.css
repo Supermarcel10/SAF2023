@@ -13,6 +13,18 @@
   color: var(--font-color);
 }
 
+.storyPage #sentence .filled.correct {
+  background-color: #fff;
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+
+.storyPage #sentence .filled.incorrect {
+  background-color: #fff;
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
 .storyPage #sentence .filled:hover, .storyPage #sentence .blank:hover {
   cursor: pointer;
 }

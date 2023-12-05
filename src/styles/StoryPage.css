@@ -9,6 +9,7 @@
 
 .storyPage .sentenceContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 70%;
@@ -16,7 +17,6 @@
   padding: 4% 0 4% 0;
 }
 
-/*The main sentence*/
 .storyPage #sentence {
   font-size: 4em;
   font-weight: bold;
@@ -27,11 +27,10 @@
 }
 
 .storyPage #translation {
-  position: absolute;
   font-size: 1.5em;
   font-weight: bold;
   color: var(--small-font-color);
-  margin: 0;
+  margin: -2em 0 0 0;
 }
 
 /*Highlighted words*/
@@ -57,14 +56,11 @@
 .storyPage .nav-button {
   font-size: 3em;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--font-color);
   background-color: var(--green);
   border-radius: 30%;
   border: .2rem solid var(--font-color);
-  padding: 0    ;
+  padding: 0;
   margin: .25rem;
   aspect-ratio: 1 / 1;
   width: 8%;
@@ -72,5 +68,28 @@
 }
 
 .storyPage .nav-button:hover {
+  background-color: var(--green-highlighted);
   cursor: pointer;
 }
+
+.storyPage .nav-button:active {
+  background-color: var(--green-clicked);
+}
+
+.storyPage .nav-button.locked {
+  color: var(--locked);
+  background-color: var(--locked-text);
+  border-color: var(--locked);
+}
+
+.storyPage .nav-button.locked:hover {
+  background-color: var(--locked-highlighted);
+  cursor: not-allowed;
+}
+
+.storyPage .nav-button.locked:active {
+  background-color: var(--locked-text);
+}
+
+/*TODO: Animations*/
+/*TODO: Mobile styles*/
