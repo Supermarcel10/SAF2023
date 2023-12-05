@@ -1,0 +1,35 @@
+@import './_variables.css';
+
+.MainMenu {
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+    background-color: var(--main-color);
+  }
+
+.MainMenu .sentenceContainer {
+    width: 70%;
+    margin: 0 auto;
+    }
+
+.MainMenu #title{
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--font-color);
+    padding: 0;
+  }
+
+  .MainMenu #sentence{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--font-color);
+    padding: 0;
+  }
+
+  .MainMenu .selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    gap: 1%;
+    margin: 0 auto;
+  }
