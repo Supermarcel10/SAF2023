@@ -1,16 +1,10 @@
+<<<<<<< HEAD
 :root {
     --main-color: #D1D2F9;
     --highlight-color: #246EB9;
     --font-color: #011627;
     --small-font-color: #777992;
-
-    --choices: #F4F6DF;
-    --choices-highlighted: #E8EABF;
-
     --green: #ACECA1;
-    --green-highlighted: #97E788;
-    --green-clicked: #6ADC56;
-
     --red: #FF847C;
     --red-highlighted: #FF6F6F;
     --red-clicked: #FF4E4E;

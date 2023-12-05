@@ -1,25 +1,40 @@
 @import './_variables.css';
 
 .MenuChoice {
-    display: flex;
-    flex-direction: center;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    background-color: #fff;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+	justify-content: center;
+	height: 100vh;
+	max-height: 32vh;
+	aspect-ratio: 1 / 1;
+	margin: 0.5rem 0;
+	padding: 0;
+	border: 5px solid #000;
+	border-radius: 0.5rem;
+	background-color: var(--choices);
 }
 
-.image {
-    width: 40%;
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+.logoImage {
+    width: 15%;
     height: auto;
-    aspect-ratio: 1 / 2;
+    aspect-ratio: 1 / 1;
     object-fit: contain;
     margin-bottom: 0;
+}
+
+.image{
+    width: 70%;
+	height: auto;
+	aspect-ratio: 1 / 1;
+	object-fit: contain;
+	margin-top: 0.25em;
+	margin-bottom: 0;
+	user-select: none;
 }
 
 /* Story title */
@@ -28,4 +43,15 @@
     font-weight: bold;
     color: var(--font-color);
     padding: 0;
+    margin-top: 0.25em;
 }
+
+.textContainer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--small-font-color);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
