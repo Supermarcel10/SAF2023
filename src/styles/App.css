@@ -1,10 +1,4 @@
-:root {
-  --main-color: #D1D2F9;
-  --highlight-color: #246EB9;
-  --font-color: #011627;
-  --green: #ACECA1;
-  --red: #FF847C;
-}
+@import './_variables.css';
 
 .App {
   font-family: 'Playpen Sans', cursive;
