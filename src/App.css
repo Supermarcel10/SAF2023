@@ -29,14 +29,15 @@
 }
 
 /*Blanked out spaces for words to be put in*/
-/*.App #sentence .blank {*/
-/*  display: inline-block;*/
-/*  width: 50px;*/
-/*  height: 1em;*/
-/*  background-color: #fff;*/
-/*  border: 1px solid #000;*/
-/*  margin: 0 5px;*/
-/*}*/
+.App #sentence .blank {
+  display: inline;
+   width: 50px;
+   height: 1em;
+   background-color: #fff;
+   border: 1px solid #000;
+   margin: 0 5px;
+   color: transparent;
+ }
 
 .App #sentence:hover {
   cursor: pointer;
