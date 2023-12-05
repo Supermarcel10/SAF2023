@@ -1,0 +1,44 @@
+@import './_variables.css';
+
+.selector .selection {
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	max-height: 32vh;
+	aspect-ratio: 1 / 1;
+	margin: 0.5rem 0;
+	padding: 0;
+	border: 5px solid #000;
+	border-radius: 0.5rem;
+	background-color: var(--choices);
+}
+
+.selector .selection:hover {
+	cursor: pointer;
+}
+
+.selector .image {
+	width: 70%;
+	height: auto;
+	aspect-ratio: 1 / 1;
+	object-fit: contain;
+	margin-top: 0.25em;
+	margin-bottom: 0;
+	user-select: none;
+}
+
+.selector .english {
+	font-size: 2.25em;
+	font-weight: bold;
+	color: var(--font-color);
+	margin: -.1em auto;
+	user-select: none;
+}
+
+.selector .translation {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--small-font-color);
+	margin-top: 0;
+	user-select: none;
+}

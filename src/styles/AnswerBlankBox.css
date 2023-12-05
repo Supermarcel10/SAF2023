@@ -1,0 +1,18 @@
+.App #sentence .blank {
+  display: inline;
+  width: 50px;
+  height: 1em;
+  background-color: #fff;
+  margin: 0 5px;
+  color: transparent;
+  user-select: none;
+}
+
+.App #sentence .filled {
+  background-color: #fff;
+  color: var(--font-color);
+}
+
+.App #sentence .filled:hover, .App #sentence .blank:hover {
+  cursor: pointer;
+}

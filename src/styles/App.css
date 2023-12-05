@@ -3,10 +3,14 @@
 .App {
   font-family: 'Playpen Sans', cursive;
   text-align: center;
+  min-height: 100vh;
   background-color: var(--main-color);
 }
 
 .App .sentenceContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70%;
   margin: 0 auto;
   padding: 4% 0 4% 0;
@@ -18,31 +22,21 @@
   font-weight: bold;
   color: var(--font-color);
   margin: 0;
+	line-height: 1.5;
+	height: calc(1.5em * 3)
 }
 
-.App #sentence:hover {
-  cursor: pointer;
+.App #translation {
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--small-font-color);
+  margin: 0;
 }
 
 /*Highlighted words*/
 .App #sentence .important {
   color: var(--highlight-color);
-}
-
-/*Blanked out spaces for words to be put in*/
-.App #sentence .blank {
-  display: inline;
-  width: 50px;
-  height: 1em;
-  background-color: #fff;
-  border: 1px solid #000;
-  margin: 0 5px;
-  color: transparent;
-  user-select: none;
-}
-
-.App #sentence:hover {
-  cursor: pointer;
 }
 
 .App .selector {
