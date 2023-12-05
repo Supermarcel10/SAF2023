@@ -1,13 +1,13 @@
 @import './_variables.css';
 
-.App {
+.storyPage {
   font-family: 'Playpen Sans', cursive;
   text-align: center;
   min-height: 100vh;
   background-color: var(--main-color);
 }
 
-.App .sentenceContainer {
+.storyPage .sentenceContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 /*The main sentence*/
-.App #sentence {
+.storyPage #sentence {
   font-size: 4em;
   font-weight: bold;
   color: var(--font-color);
@@ -26,7 +26,7 @@
   height: calc(1.5em * 3)
 }
 
-.App #translation {
+.storyPage #translation {
   position: absolute;
   font-size: 1.5em;
   font-weight: bold;
@@ -35,11 +35,11 @@
 }
 
 /*Highlighted words*/
-.App #sentence .important {
+.storyPage #sentence .important {
   color: var(--highlight-color);
 }
 
-.App .selector {
+.storyPage .selector {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,13 +48,13 @@
   margin: 0 auto;
 }
 
-.App .navigation {
+.storyPage .navigation {
   display: flex;
   justify-content: space-between;
   padding: 4% 15% 0 15%;
 }
 
-.App .nav-button {
+.storyPage .nav-button {
   font-size: 3em;
   font-weight: bold;
   display: flex;
@@ -71,6 +71,6 @@
   min-width: 10vh;
 }
 
-.App .nav-button:hover {
+.storyPage .nav-button:hover {
   cursor: pointer;
 }

@@ -1,4 +1,4 @@
-.App #sentence .blank {
+.storyPage #sentence .blank {
   display: inline;
   width: 50px;
   height: 1em;
@@ -8,11 +8,11 @@
   user-select: none;
 }
 
-.App #sentence .filled {
+.storyPage #sentence .filled {
   background-color: #fff;
   color: var(--font-color);
 }
 
-.App #sentence .filled:hover, .App #sentence .blank:hover {
+.storyPage #sentence .filled:hover, .storyPage #sentence .blank:hover {
   cursor: pointer;
 }

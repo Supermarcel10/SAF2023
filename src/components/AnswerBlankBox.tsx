@@ -1,12 +1,8 @@
 import * as React from 'react';
 import '../styles/AnswerBlankBox.css';
 
-interface AnswerBlankBoxProps {
-    text: string;
-    setText: (text: string) => void;
-}
-
-const AnswerBlankBox: React.FC<AnswerBlankBoxProps> = (props) => {
+const AnswerBlankBox: React.FC = () => {
+    const [text, setText] = React.useState("");
     const [isFilled, setIsFilled] = React.useState(false);
 
     const handleDragOver = (event: React.DragEvent<HTMLSpanElement>) => {
@@ -16,12 +12,14 @@ const AnswerBlankBox: React.FC<AnswerBlankBoxProps> = (props) => {
     const handleDrop = (event: React.DragEvent<HTMLSpanElement>) => {
         event.preventDefault();
         const english = event.dataTransfer.getData('text/plain');
-        props.setText(english);
+        setText(english);
         setIsFilled(true);
     };
 
     return (
-        <span className={isFilled ? "filled blank" : "blank"} onDragOver={handleDragOver} onDrop={handleDrop}>{props.text}</span>
+        <span className={isFilled ? "filled blank" : "blank"} onDragOver={handleDragOver} onDrop={handleDrop}>
+            {text || "empty"}
+        </span>
     );
 }
 
