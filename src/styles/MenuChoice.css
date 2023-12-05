@@ -1,0 +1,57 @@
+@import './_variables.css';
+
+.MenuChoice {
+    align-items: center;
+	justify-content: center;
+	height: 100vh;
+	max-height: 32vh;
+	aspect-ratio: 1 / 1;
+	margin: 0.5rem 0;
+	padding: 0;
+	border: 5px solid #000;
+	border-radius: 0.5rem;
+	background-color: var(--choices);
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+.logoImage {
+    width: 15%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    margin-bottom: 0;
+}
+
+.image{
+    width: 70%;
+	height: auto;
+	aspect-ratio: 1 / 1;
+	object-fit: contain;
+	margin-top: 0.25em;
+	margin-bottom: 0;
+	user-select: none;
+}
+
+/* Story title */
+.title{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--font-color);
+    padding: 0;
+    margin-top: 0.25em;
+}
+
+.textContainer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--small-font-color);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
