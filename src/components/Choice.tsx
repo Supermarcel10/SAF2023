@@ -1,4 +1,5 @@
 import * as React from 'react';
+import '../styles/Choice.css';
 
 interface ChoiceProps {
 	english: string;
@@ -9,10 +10,10 @@ interface ChoiceProps {
 
 function Choice(props: ChoiceProps) {
 	return (
-		<div>
-			<h2>{props.english}</h2>
-			<h3>{props.translated}</h3>
-			<img src={props.image_path} alt={props.image_alt} />
+		<div className={"selector"}>
+			<img className={"image"} src={props.image_path} alt={props.image_alt} />
+			<p className={"english"}>{props.english}</p>
+			<p className={"translation"}>{props.translated}</p>
 		</div>
 	);
 }
