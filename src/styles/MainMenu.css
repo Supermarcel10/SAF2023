@@ -4,6 +4,7 @@
   font-family: 'Playpen Sans', cursive;
   text-align: center;
   background-color: var(--main-color);
+  min-height: 100vh;
 }
 
 .MainMenu .logoImage img{

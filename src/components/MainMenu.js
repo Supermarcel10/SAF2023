@@ -7,12 +7,14 @@ import dogImage from '../img/dog.png';
 import horseImage from '../img/horse.png';
 import frogImage from '../img/frog.png';
 import logo from '../img/logo.png';
-import {Link} from "react-router-dom";
 
 function MainMenu() {
 return (
   <div className = "MainMenu">
     <header className="App-header">
+      <div style={{textAlign: 'right', margin: '0 50px 0 0'}}>
+        <button style={{fontSize: '23px', backgroundColor: 'var(--green-highlighted)'}}>Log In</button>
+      </div>
       <div>
         <img className="logoImage" src={logo} alt="logo"/>
       </div>
