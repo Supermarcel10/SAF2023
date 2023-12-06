@@ -8,14 +8,28 @@ import {Link} from "react-router-dom";
 
 function StoryPage(props) {
 	const { sentence, translation, answerChoices, goToNextPage, goToPreviousPage, isFirstPage, isLastPage } = props;
-	const [allAnswersCorrect, setAllAnswersCorrect] = React.useState(false);
+	const [blankTexts, setBlankTexts] = React.useState(Array(answerChoices.length).fill(null));
+	const [resetKey, setResetKey] = React.useState(0); // Add this line
+	const [allAnswersCorrect, setAllAnswersCorrect] = React.useState(true);
+
+	const handleGoToNextPage = () => {
+		if (allAnswersCorrect) {
+			goToNextPage();
+			setBlankTexts(Array(answerChoices.length).fill(null));
+			setResetKey(prevKey => prevKey + 1); // Add this line
+		}
+	};
 
 	const parseSentence = (sentence) => {
 		const parts = sentence.split(/(\{.*?})|([.,?!;:])/).filter(Boolean);
 
 		return parts.map((part, index) => {
 			if (part.startsWith("{") && part.endsWith("}")) {
-				return <Blank key={index} setCorrectAnswers={setCorrectAnswers} />;
+				return <Blank key={resetKey} text={blankTexts[index]} setText={(text) => { // Modify this line
+					const newBlankTexts = [...blankTexts];
+					newBlankTexts[index] = text;
+					setBlankTexts(newBlankTexts);
+				}} expectedText={part.substring(1, part.length - 1)} setCorrectAnswers={setCorrectAnswers} />;
 			} else return part;
 		});
 	};
@@ -26,10 +40,18 @@ function StoryPage(props) {
 	};
 
 	return (
-		<div className="storyPage">
-			<div className={"sentenceContainer"}>
-				<p id={"sentence"}>{parseSentence(sentence)}</p>
-				<p id={"translation"}>{translation}</p>
+		<div className="storyPage" style={props.background_image ? {
+			background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${props.background_image})`,
+			backgroundSize: 'cover',
+			backgroundRepeat: 'no-repeat'
+		} : {}}>
+			<div className={`sentenceContainer ${props.background_image ? 'white-font-color' : ''}`}>
+				<p id={props.background_image ? "sentence-white" : "sentence"}>
+					{parseSentence(sentence)}
+				</p>
+				<p id={props.background_image ? "translation-white" : "translation"}>
+					{translation}
+				</p>
 			</div>
 			<div className={"selector"}>
 				{answerChoices.map((choice, index) => (
@@ -45,13 +67,13 @@ function StoryPage(props) {
 				>
 					&#8592;
 				</button>
-				<Link className={"houseContainer"} to="/MainMenu">
+				<Link className={"houseContainer"} to="/">
 					<img className={"houseIconImage"} src={houseIconImage} alt="Home" />
 				</Link>
 				<button
 					className={`nav-button ${isLastPage || !allAnswersCorrect ? 'locked' : ''}`}
 					id={"next-button"}
-					onClick={goToNextPage}
+					onClick={handleGoToNextPage}
 					disabled={isLastPage || !allAnswersCorrect}
 				>
 					&#8594;
@@ -61,12 +83,15 @@ function StoryPage(props) {
 	);
 }
 
-// TODO: Fix the bug where the buttons for moving to next page are not working
-// TODO: Fix error with dragging and dropping
-// TODO: Remove backgrounds from images
-// TODO: Validation of correct answers
-// TODO: Scaling for mobile
+// TODO: Add backgrounds to puzzles
 // TODO: Video of the story
 // TODO: Prep for presentation
+
+// Optional
+// TODO: Scaling for mobile
 // TODO: Host the website on something
+// TODO: Remove backgrounds from images
+
+// Not happening
+// TODO: Validation of correct answers
 export default StoryPage;

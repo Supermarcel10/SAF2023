@@ -1,4 +1,4 @@
-.storyPage #sentence .blank {
+.storyPage #sentence .blank, .storyPage #sentence-white .blank {
   display: inline;
   width: 50px;
   height: 1em;
@@ -8,23 +8,21 @@
   user-select: none;
 }
 
-.storyPage #sentence .filled {
+.storyPage #sentence .filled, .storyPage #sentence-white .filled {
   background-color: #fff;
   color: var(--font-color);
 }
 
-.storyPage #sentence .filled.correct {
+.storyPage #sentence .filled.correct, .storyPage #sentence-white .filled.correct {
   background-color: #fff;
-  border: 1px solid var(--green);
-  color: var(--green);
+  border: 2px solid var(--green);
 }
 
-.storyPage #sentence .filled.incorrect {
+.storyPage #sentence .filled.incorrect, .storyPage #sentence-white .filled.incorrect {
   background-color: #fff;
-  border: 1px solid var(--red);
-  color: var(--red);
+  border: 2px solid var(--red);
 }
 
-.storyPage #sentence .filled:hover, .storyPage #sentence .blank:hover {
+.storyPage #sentence .filled:hover, .storyPage #sentence .blank:hover, .storyPage #sentence-white .filled:hover, .storyPage #sentence-white .blank:hover {
   cursor: pointer;
 }

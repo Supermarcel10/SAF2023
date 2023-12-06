@@ -10,7 +10,7 @@ interface AnswerBlankBoxProps {
 
 const AnswerBlankBox: React.FC<AnswerBlankBoxProps> = (props) => {
     const [isFilled, setIsFilled] = React.useState(false);
-    const [isCorrect, setIsCorrect] = React.useState(false);
+    const [isCorrect, setIsCorrect] = React.useState(true);
 
     const handleDragOver = (event: React.DragEvent<HTMLSpanElement>) => {
         event.preventDefault();
@@ -23,10 +23,10 @@ const AnswerBlankBox: React.FC<AnswerBlankBoxProps> = (props) => {
         setIsFilled(true);
         if (english === props.expectedText) {
             setIsCorrect(true);
-            props.setCorrectAnswers(true);
+            // props.setCorrectAnswers(true);
         } else {
             setIsCorrect(false);
-            props.setCorrectAnswers(false);
+            // props.setCorrectAnswers(true);
         }
     };
 

@@ -33,8 +33,24 @@
   margin: -2em 0 0 0;
 }
 
+.storyPage #sentence-white {
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--white-font-color);
+  margin: 0;
+  line-height: 1.5;
+  height: calc(1.5em * 3)
+}
+
+.storyPage #translation-white {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--white-small-font-color);
+  margin: -2em 0 0 0;
+}
+
 /*Highlighted words*/
-.storyPage #sentence .important {
+.storyPage #sentence .important, .storyPage #sentence-white .important {
   color: var(--highlight-color);
 }
 
