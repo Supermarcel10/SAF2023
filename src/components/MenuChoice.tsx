@@ -7,12 +7,11 @@ interface MenuChoiceProps {
 	image_path: string;
 	image_alt: string;
 	status: string;
-	onClick: () => void;
 }
 
 function MenuChoice(props: MenuChoiceProps ) {
 	const statusColor = props.status === 'locked' ? 'var(--red)' : 'var(--green)' ;
-	const statusLink = props.status === 'locked' ? "#" : "\story" ;
+	const statusLink = props.status === 'locked' ? "#" : "story" ;
 	return (
 		<div className="selector">
 			<div className="textContainer" style={{ backgroundColor: statusColor}}>

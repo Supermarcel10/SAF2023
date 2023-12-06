@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import * as React from 'react';
 import '../styles/AnswerChoice.css';
 
