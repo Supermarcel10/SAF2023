@@ -14,7 +14,13 @@ Addressing this gap is crucial.
 
 In response, we've created an interactive website designed to teach English to children in an engaging and enjoyable manner.
 
+![image](https://github.com/Supermarcel10/SAF2023/assets/47798787/9c4e5e1e-8fae-4060-b207-184c27bc1772)
+![image](https://github.com/Supermarcel10/SAF2023/assets/47798787/1b4210e1-7fe2-490d-9d57-38a1fe64bc46)
+
 Our approach combines the fun of storytelling with the fundamentals of language learning, fostering an enriching educational journey.
+
+![image](https://github.com/Supermarcel10/SAF2023/assets/47798787/3541a6e7-70e8-41ad-9136-2d51c923ccf9)
+![image](https://github.com/Supermarcel10/SAF2023/assets/47798787/1065f7ac-1507-443e-9e4b-772ed004d32f)
 
 ## Business Plan
 
