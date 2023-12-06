@@ -19,14 +19,14 @@
   margin: 0 auto;
 }
 
-.MainMenu #title{
+.MainMenu #title {
   font-size: 4em;
   font-weight: bold;
   color: var(--font-color);
   padding: 0;
 }
 
-.MainMenu #sentence{
+.MainMenu #sentence {
   font-size: 2em;
   font-weight: bold;
   color: var(--font-color);

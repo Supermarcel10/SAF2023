@@ -153,12 +153,14 @@ const StoryBook = () => {
 
   return (
     <StoryPage
+      key={currentPage}
       {...storyPages[currentPage]}
       goToNextPage={goToNextPage}
       goToPreviousPage={goToPreviousPage}
       isLastPage={currentPage === storyPages.length - 1}
       isFirstPage={currentPage === 0}
     />
+
   );
 };
 

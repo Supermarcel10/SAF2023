@@ -43,6 +43,7 @@ function StoryPage(props) {
 		<div className="storyPage" style={props.background_image ? {
 			background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${props.background_image})`,
 			backgroundSize: 'cover',
+			backgroundPosition: 'center',
 			backgroundRepeat: 'no-repeat'
 		} : {}}>
 			<div className={`sentenceContainer ${props.background_image ? 'white-font-color' : ''}`}>
@@ -83,14 +84,12 @@ function StoryPage(props) {
 	);
 }
 
-// TODO: Add backgrounds to puzzles
 // TODO: Video of the story
 // TODO: Prep for presentation
 
 // Optional
 // TODO: Scaling for mobile
 // TODO: Host the website on something
-// TODO: Remove backgrounds from images
 
 // Not happening
 // TODO: Validation of correct answers

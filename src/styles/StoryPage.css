@@ -5,6 +5,8 @@
   text-align: center;
   min-height: 100vh;
   background-color: var(--main-color);
+  top: 0;
+  left: 0;
 }
 
 .storyPage .sentenceContainer {
@@ -69,6 +71,29 @@
   padding: 4% 15% 0 15%;
 }
 
+.storyPage .houseContainer {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--font-color);
+  background-color: var(--green);
+  border-radius: 30%;
+  border: .2rem solid var(--font-color);
+  padding: 0;
+  margin: .25rem;
+  aspect-ratio: 1 / 1;
+  width: 8%;
+  min-width: 10vh;
+}
+
+.storyPage .houseContainer:hover {
+  background-color: var(--green-highlighted);
+  cursor: pointer;
+}
+
+.storyPage .houseContainer:active {
+  background-color: var(--green-clicked);
+}
+
 .storyPage .nav-button {
   font-size: 3em;
   font-weight: bold;
@@ -114,6 +139,6 @@
 }
 
 .storyPage .houseIconImage {
-  height: 6em;
+  height: 1.5em;
   aspect-ratio: 1 / 1;
 }
