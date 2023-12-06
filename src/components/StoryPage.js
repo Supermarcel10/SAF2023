@@ -2,11 +2,12 @@ import * as React from 'react';
 import '../styles/StoryPage.css';
 import AnswerChoice from './AnswerChoice.tsx';
 import Blank from "./AnswerBlankBox.tsx";
-import MainMenu from "./MainMenu";
+
+import houseIconImage from '../img/homeIcon.png';
+import {Link} from "react-router-dom";
 
 function StoryPage(props) {
 	const { sentence, translation, answerChoices, goToNextPage, goToPreviousPage, isFirstPage, isLastPage } = props;
-
 	const [allAnswersCorrect, setAllAnswersCorrect] = React.useState(false);
 
 	const parseSentence = (sentence) => {
@@ -26,7 +27,6 @@ function StoryPage(props) {
 
 	return (
 		<div className="storyPage">
-
 			<div className={"sentenceContainer"}>
 				<p id={"sentence"}>{parseSentence(sentence)}</p>
 				<p id={"translation"}>{translation}</p>
@@ -45,6 +45,9 @@ function StoryPage(props) {
 				>
 					&#8592;
 				</button>
+				<Link className={"houseContainer"} to="/MainMenu">
+					<img className={"houseIconImage"} src={houseIconImage} alt="Home" />
+				</Link>
 				<button
 					className={`nav-button ${isLastPage || !allAnswersCorrect ? 'locked' : ''}`}
 					id={"next-button"}
@@ -58,7 +61,12 @@ function StoryPage(props) {
 	);
 }
 
-// TODO: Button to go back to main menu.
-// TODO: Icons
+// TODO: Fix the bug where the buttons for moving to next page are not working
+// TODO: Fix error with dragging and dropping
+// TODO: Remove backgrounds from images
 // TODO: Validation of correct answers
+// TODO: Scaling for mobile
+// TODO: Video of the story
+// TODO: Prep for presentation
+// TODO: Host the website on something
 export default StoryPage;

@@ -91,5 +91,13 @@
   background-color: var(--locked-text);
 }
 
-/*TODO: Animations*/
-/*TODO: Mobile styles*/
+.storyPage .houseContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.storyPage .houseIconImage {
+  height: 6em;
+  aspect-ratio: 1 / 1;
+}
