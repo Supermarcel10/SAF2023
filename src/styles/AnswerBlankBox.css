@@ -1,0 +1,30 @@
+.storyPage #sentence .blank {
+  display: inline;
+  width: 50px;
+  height: 1em;
+  background-color: #fff;
+  margin: 0 5px;
+  color: transparent;
+  user-select: none;
+}
+
+.storyPage #sentence .filled {
+  background-color: #fff;
+  color: var(--font-color);
+}
+
+.storyPage #sentence .filled.correct {
+  background-color: #fff;
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+
+.storyPage #sentence .filled.incorrect {
+  background-color: #fff;
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.storyPage #sentence .filled:hover, .storyPage #sentence .blank:hover {
+  cursor: pointer;
+}

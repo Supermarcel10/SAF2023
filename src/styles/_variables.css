@@ -3,6 +3,19 @@
     --highlight-color: #246EB9;
     --font-color: #011627;
     --small-font-color: #777992;
+
+    --choices: #F4F6DF;
+    --choices-highlighted: #E8EABF;
+
     --green: #ACECA1;
+    --green-highlighted: #9EDC91;
+    --green-clicked: #8EDC81;
+
     --red: #FF847C;
+    --red-highlighted: #FF6F6F;
+    --red-clicked: #FF4E4E;
+
+    --locked: #807E8B;
+    --locked-highlighted: #1b1828;
+    --locked-text: #CAC9CF;
 }

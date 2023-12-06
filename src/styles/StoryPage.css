@@ -1,0 +1,103 @@
+@import './_variables.css';
+
+.storyPage {
+  font-family: 'Playpen Sans', cursive;
+  text-align: center;
+  min-height: 100vh;
+  background-color: var(--main-color);
+}
+
+.storyPage .sentenceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 4% 0 4% 0;
+}
+
+.storyPage #sentence {
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--font-color);
+  margin: 0;
+  line-height: 1.5;
+  height: calc(1.5em * 3)
+}
+
+.storyPage #translation {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--small-font-color);
+  margin: -2em 0 0 0;
+}
+
+/*Highlighted words*/
+.storyPage #sentence .important {
+  color: var(--highlight-color);
+}
+
+.storyPage .selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  gap: 1%;
+  margin: 0 auto;
+}
+
+.storyPage .navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 15% 0 15%;
+}
+
+.storyPage .nav-button {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--font-color);
+  background-color: var(--green);
+  border-radius: 30%;
+  border: .2rem solid var(--font-color);
+  padding: 0;
+  margin: .25rem;
+  aspect-ratio: 1 / 1;
+  width: 8%;
+  min-width: 10vh;
+}
+
+.storyPage .nav-button:hover {
+  background-color: var(--green-highlighted);
+  cursor: pointer;
+}
+
+.storyPage .nav-button:active {
+  background-color: var(--green-clicked);
+}
+
+.storyPage .nav-button.locked {
+  color: var(--locked);
+  background-color: var(--locked-text);
+  border-color: var(--locked);
+}
+
+.storyPage .nav-button.locked:hover {
+  background-color: var(--locked-highlighted);
+  cursor: not-allowed;
+}
+
+.storyPage .nav-button.locked:active {
+  background-color: var(--locked-text);
+}
+
+.storyPage .houseContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.storyPage .houseIconImage {
+  height: 6em;
+  aspect-ratio: 1 / 1;
+}
