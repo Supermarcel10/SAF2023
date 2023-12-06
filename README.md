@@ -27,7 +27,7 @@ We are one of two teams proudly representing the United Kingdom. 🇬🇧
 Our team:
 - **Daniel Sikar** - Team Mentor
 - [**Kimberly Demoore**](https://github.com/kimbebebe) - Business, Graphics Design & Presentation
-- [**Ellen Taylor**](https://github.com/ellentaylor827) - Frontend Developer & Storyteller
+- [**Ellen Taylor**](https://github.com/ellentaylor827) - Full Stack Developer
 - [**Marcel Barlik**](https://github.com/Supermarcel10) - Full Stack Developer
 
 # Copyright
