@@ -24,7 +24,7 @@ return (
       </div>
       <div> <p id = {"Sentence"}> Coins: 0</p></div>
       <div className={"selector"}>
-        <Link to="/story"><MenuChoice english={"Coco The Curious Cat"} translated={"Coco Maraqlı Pişik"} image_path={catImage} image_alt={"image of a cat"} status={"unlocked"}/></Link>
+        <MenuChoice english={"Coco The Curious Cat"} translated={"Coco Maraqlı Pişik"} image_path={catImage} image_alt={"image of a cat"} status={"unlocked"}/>
         <MenuChoice english={"Daisy's Digging Day"} translated={"Daisy'nin Qazma Günü"} image_path={dogImage} image_alt={"image of a dog"} status = "locked" />
         <MenuChoice english={"Cinnamon's Wild Ride"} translated={"Darçın Vəhşi Sürüş"} image_path={horseImage} image_alt={"image of a horse"} status = "locked"/>
         <MenuChoice english={"Frog finds a friend"} translated={"Qurbağa dost tapır"} image_path={frogImage} image_alt={"image of a frog"} status = "locked"/>

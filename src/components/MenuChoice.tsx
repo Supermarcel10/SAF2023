@@ -10,13 +10,15 @@ interface MenuChoiceProps {
 }
 
 function MenuChoice(props: MenuChoiceProps ) {
-	const statusColor = props.status === 'locked' ? 'var(--red)' : 'var(--small-font-color)' ;
+	const statusColor = props.status === 'locked' ? 'var(--red)' : 'var(--green)' ;
+	const statusLink = props.status === 'locked' ? "#" : "story" ;
 	return (
 		<div className="selector">
 			<div className="textContainer" style={{ backgroundColor: statusColor}}>
+			<a href={statusLink} className="link" style={{ textDecoration: 'none' }}>
 				<img className="image" src={props.image_path} alt={props.image_alt}/>
 				<p className="english">{props.english}</p>
-				<p className="translation">{props.translated}</p>
+				<p className="translation">{props.translated}</p></a>
 			</div>
 		</div>
 	);

@@ -18,7 +18,7 @@ Our approach combines the fun of storytelling with the fundamentals of language 
 
 ## Business Plan
 
-Discover more about our strategic vision and roadmap in our detailed [Business Plan](https://docs.google.com/presentation/d/19dv8dwEsfQjwtNG4MAqA4X5h-29J2KPm1yd4HwzsYag/edit#slide=id.p).
+Discover more about our strategic vision and roadmap in our detailed [Business Plan](https://docs.google.com/presentation/d/19dv8dwEsfQjwtNG4MAqA4X5h-29J2KPm1yd4HwzsYag/edit?usp=sharing).
 
 ## Our Team
 
@@ -27,11 +27,11 @@ We are one of two teams proudly representing the United Kingdom. 🇬🇧
 Our team:
 - **Daniel Sikar** - Team Mentor
 - [**Kimberly Demoore**](https://github.com/kimbebebe) - Business, Graphics Design & Presentation
-- [**Ellen Taylor**](https://github.com/ellentaylor827) - Frontend Developer & Storyteller
+- [**Ellen Taylor**](https://github.com/ellentaylor827) - Full Stack Developer
 - [**Marcel Barlik**](https://github.com/Supermarcel10) - Full Stack Developer
 
 # Copyright
 
 Our project uses the [Playpen Sans](https://fonts.google.com/specimen/Playpen+Sans?classification=Handwriting) font, licensed under the [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web).
 
-The images used in our project are royalty-free and sourced from multiple sources.
+The images used in our project are royalty-free and sourced from multiple sources. Most images were generated with DALL.E.
