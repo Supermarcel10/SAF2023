@@ -18,7 +18,7 @@ Our approach combines the fun of storytelling with the fundamentals of language 
 
 ## Business Plan
 
-Discover more about our strategic vision and roadmap in our detailed [Business Plan](https://docs.google.com/presentation/d/19dv8dwEsfQjwtNG4MAqA4X5h-29J2KPm1yd4HwzsYag/edit#slide=id.p).
+Discover more about our strategic vision and roadmap in our detailed [Business Plan](https://docs.google.com/presentation/d/19dv8dwEsfQjwtNG4MAqA4X5h-29J2KPm1yd4HwzsYag/edit?usp=sharing).
 
 ## Our Team
 
