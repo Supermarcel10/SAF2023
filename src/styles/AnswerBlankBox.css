@@ -15,12 +15,12 @@
 
 .storyPage #sentence .filled.correct, .storyPage #sentence-white .filled.correct {
   background-color: #fff;
-  border: 2px solid var(--green);
+  border: 3px solid var(--green);
 }
 
 .storyPage #sentence .filled.incorrect, .storyPage #sentence-white .filled.incorrect {
   background-color: #fff;
-  border: 2px solid var(--red);
+  border: 3px solid var(--red);
 }
 
 .storyPage #sentence .filled:hover, .storyPage #sentence .blank:hover, .storyPage #sentence-white .filled:hover, .storyPage #sentence-white .blank:hover {

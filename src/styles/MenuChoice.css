@@ -11,12 +11,14 @@
 	border: 5px solid #000;
 	border-radius: 0.5rem;
 	background-color: var(--choices);
+    text-decoration: none;
 }
 
 .image-container {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center;
+    aspect-ratio: 1/1;
   }
 
 .logoImage {
@@ -44,6 +46,7 @@
     color: var(--font-color);
     padding: 0;
     margin-top: 0.25em;
+    text-decoration: none;
 }
 
 .textContainer {
@@ -51,7 +54,8 @@
     left: 0;
     width: 100%;
     background-color: var(--small-font-color);
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
     text-align: center;
+    font-size: 10px;
   }
