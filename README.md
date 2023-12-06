@@ -34,4 +34,4 @@ Our team:
 
 Our project uses the [Playpen Sans](https://fonts.google.com/specimen/Playpen+Sans?classification=Handwriting) font, licensed under the [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web).
 
-The images used in our project are royalty-free and sourced from multiple sources.
+The images used in our project are royalty-free and sourced from multiple sources. Most images were generated with DALL.E.
